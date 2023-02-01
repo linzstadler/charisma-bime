@@ -1,3 +1,4 @@
+
 .tophead{
     background-color:var(--grey-1);
     min-width: 992px;
@@ -41,12 +42,17 @@
 }
 /* ------------------------------------------پایان بخش top header--------------- */
 /* ---------------------------------------------بخش bottom header  مگا منو   و----------- */
+.bottom-header .logo-image{
+    width: 12%;
+}
 .bottom-header{
     display: flex;
-    padding: .8rem 7rem;flex-direction: row;
+    padding: .8rem 7rem;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: 1px solid var(--grey-9);
+    position: relative;
 }
 .bottom-header .nav-link{
     color: var(--black);
@@ -59,46 +65,84 @@
     border-radius: 25px;
     position: relative;
 }
-.bottom-header .form-log a{
-    display: block;
-    text-decoration: none;
-    color: var(--black);
-    font-size: .8rem;
-    padding: 1rem 0;
-}
-.bottom-header .form-log{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: flex-start;
-    margin: 3rem;
-}
-.bottom-header .login-form{
-    display: none;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+.bottom-header .tab-hover{
     position: absolute;
-    background-color: var(--white);
-    border-top: 1px solid var(--black);
-    width: 100%;
+    background-color: white;
     right: 0;
-    z-index: 4;
+    padding: 2rem;
+    z-index: 10;
+    width: 100%;
+    border-top: 1px solid var(--black);
+    display: none;
 }
-.bottom-header .login-nav:hover .login-form{
+.service-nav:hover .tab-hover , .about-nav:hover .tab-hover{
+    display: block;
+}
+.left-3-including{
+    text-align: left;
+    border-right: 1px solid var(--cyan-1);
+}
+.left-3-including .btn-outline-secondary{
+    border-radius: 20px;
+    margin: 1.5rem;
+}
+.tab-hover .row , .col{
+    direction: ltr;
+}
+.right-3-including .sub-icon{
     display: flex;
+    direction: ltr;
 }
-.login-comp-1 h6{
-    width: 20rem;
-    text-align: left
+.icon-sub-title{
+    text-align: left;
+    margin-left: .5rem;
 }
-.login-comp-1{
-    margin-right: none;
-    padding: 1rem;
-    border-right: 1px solid var(--grey-5);
+.icon-sub-title p{
+    font-size: .68rem;
 }
-/* ---------------------------------------------------------------------------------------- */
+.sub-icon a{
+    color: var(--black);
+}
+/* ----------------------------------login mega menu styles-------------- */
+
+/* -------------------------------about mega menu styles-------------- */
+.sub-2-1 .icon-sub-1{
+    width: 6.5rem;
+    height: 3.5rem;
+    background-image: url(apartman.png) ,linear-gradient( 45deg, #31AA8D 0%, #80CD61 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 35px;
+}
+.sub-2-2 .icon-sub-1{
+    width: 4rem;
+    height: 3.5rem;
+    background-image: url(handshake.png) ,linear-gradient( 45deg, #31AA8D 0%, #80CD61 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 35px;
+}
+.sub-2-3 .icon-sub-1{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-image: url(wallet.png) ,linear-gradient( 45deg, #31AA8D 0%, #80CD61 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 35px;
+}
+.sub-2-4 .icon-sub-1{
+    width: 6.5rem;
+    height: 3.5rem;
+    background-image: url(paper.png) ,linear-gradient( 45deg, #31AA8D 0%, #80CD61 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 35px;
+}
+/* --------------------------------------services mega menu styles-------------------- */
+.icon-sub-1 img{
+    width: 3rem;
+    height: 3rem;
+}
 /* ------------------------------------------------------------main start------------------------------------ */
 main .main-label a{
     text-decoration: none;
@@ -119,16 +163,16 @@ main .main-label a:hover{
 footer{
     background-color: var(--grey-6);
 }
-.mainfooter{
+/* .mainfooter{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-}
-.mainfooter a{
+} */
+.container a{
     text-decoration: none;
 }
-.mainfooter a:hover{
+.container a:hover{
     color: var(--brown-1);
 }
 .sub {
@@ -169,7 +213,7 @@ footer{
     justify-content: space-around;
     background-color: var(--grey-8);
 }
-.mainfooter .twice-logo{
+.container .twice-logo{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -181,7 +225,6 @@ footer{
     max-width: 69.3rem;
     margin: auto;
     border-top: 1px solid var(--cyan-1);
-    margin-top: 13rem;
 }
 .bottomfooter{
     display: flex;
@@ -253,6 +296,11 @@ footer{
     background-color: #95D03A;
     box-shadow:inset 0 0 20px -10px;
 }
+.share-icon .top-share{
+    margin: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
 .sub-share img{
     width: 2rem;
     height: 2rem;
@@ -288,15 +336,85 @@ footer{
 .sub-share{
     background-color: #95D03A;
 }
-/* @media screen and (min-width= 1200){
-    .mainfooter .submain{
-        max-width: 18.1rem;
-        max-height: 19rem;
+.arrow svg{
+    width: 2rem;
+    height: 2rem;
+}
+.sub-share img{
+    margin: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: .5s;
+}
+.sub-share:hover .share{
+    transform: translateX(10px);
+    transition: .5s;
+}
+.sub-message{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    transition: .5s;
+}
+.message:hover .sub-message{
+    transform: translateX(10px);
+    transition: .5s;
+}
+.line .sub-line{
+    width: 7rem;
+    height: 4rem;
+    margin-right: -1.5rem;
+    transition: .5s;
+}
+.line:hover .sub-line{
+    transform: translateX(10px);
+    transition: .5s;
+}
+.vibe .messenger{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    transition: .5s;
+}
+.vibe:hover .messenger{
+    transform: translateX(10px);
+    transition: .5s;
+}
+.watsapp .sub-whats{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    transition: .5s;
+}
+.watsapp:hover .sub-whats{
+    transform: translateX(10px);
+    transition: .5s;
+}
+.wechat .sub-wechat{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    border-radius: 20px;
+    transition: .5s;
+}
+.wechat:hover .sub-wechat{
+    transform: translateX(10px);
+    transition: .5s;
+}
+.facebook .sub-face{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    transition: .5s;
+    background-color: var(--white);
+    border-radius: 30px;
+}
+.facebook:hover .sub-face{
+    transform: translateX(10px);
+    transition: .5s;
+}
+@media screen and (min-width: 600px) and (max-width: 991px) {
+    .tophead .topheader {
+        padding: 0 7rem;
     }
 }
-@media screen and ( max-width= 1199) and ( min-width= 992){
-    .mainfooter .submain{
-        max-width: 15rem;
-        height: 20rem;
-    }
-} */
