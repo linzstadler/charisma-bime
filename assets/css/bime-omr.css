@@ -1,8 +1,8 @@
-.content .title {
+.header h1 {
     color: var(--black);
     font-size: 3.125rem;
-
-
+    font-family:font4;
+    margin-top: 0.625rem;
 }
 .text-center {
     text-align: center !important;
@@ -11,53 +11,18 @@
     margin: 3vh 0 1.5vh 0;
     text-align: center;
     display: block;
+
 }
- p {   /*line-height: 1.5em;*/
+ .header p {   /*line-height: 1.5em;*/
     
     /*width:*/
-    text-align: center;
-    font-size: 25px;
-    line-height: 1.5;
-  letter-spacing: 2px;
-  padding: 0 20px 20px 20px;
-    
-    
-    
+    text-align:justify;
+    font-size: large;
+    font-family:font2 ;
+    letter-spacing: 2px;
+    width: 78.125rem;
+    margin: 25px 40px 25px 3px;
 }
-.item
-{flex:none;
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
-.content.item.paragerafmojaza
-{
-    background-image: url(C:\Users\be success\Desktop\projeect\clio-product-24);
-    display: block;
-    height: 100px;
-    width: 100px;
-    background-size: contain;
-    margin: auto;
-    background-repeat: no-repeat;
-}
-.icon {
-    background-color: DodgerBlue; /* Blue background */
-    border: none; /* Remove borders */
-    color: white; /* White text */
-    padding: 12px 16px; /* Some padding */
-    font-size: 16px; /* Set a font size */
-    cursor: pointer; /* Mouse pointer on hover */
-    
-    }        
-  .icon:hover {
-    color: red;
-    background-color: white;
-
-
-}
-
-
 
 .content .image .karizma {
     width: 100%;
@@ -80,19 +45,16 @@
     font-size: 32px;
    }
     
-.figcaption{
+.end.figcaption{
     color: var(--white);
     text-decoration-line: none;
- 
     font-style:oblique;
-
     text-align:center;
-    
     margin-top: 1rem;
     display: block;
-    
-    padding:  50px;
+     padding:  50px;
     font-size: 32px;
+    font-family: font4;
 }
     
 .btn{
@@ -102,39 +64,10 @@
         text-decoration: none;
         border-radius:1.5625em;
         border-color: 2px solid var(--white);
-        margin-top: 1rem !important
+        margin-top: 1rem !important;
+        font-family: font3;
     }
-
     
-    .flex-container {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        width: 95%;
-         padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-         margin-left: auto;
-          
-      }
-      /* Style buttons */
-.btn1 {
-     
-    cursor: pointer;
-    font-size: 20px;
-    background-color: #ddd;
-    color: var(--black);
-    text-align: center;
-    text-decoration: none;
-    display:inline-block;
-     margin: 40px 200px;
-    border-radius: 40px;
-    border-color: var(--white);
-      }
-      .nav-item {
-        position:relative;
-        z-index: 200;
-    }
 .box{
     display: flex;
 
@@ -146,25 +79,27 @@
     width: 100%;
     
 }
-.box p{
+.box p {
     color: #f39800;
     margin-bottom: 0.5rem;
-    font-weight: 400;
-    line-height: 1.2;
+    font-family: font2;
+    width: 450px;
+    margin: 1em;
     font-size: 1.5rem!important;
 }
 .result h2{
     margin-bottom: 0.5rem;
+    font-family: font2;
     font-weight: 400;
     line-height: 1.2;
-    font-size: 28px !important;
+    font-size: 35px !important;
     text-align: right;
 }
 .result h3{
     text-align: right;
-    font-size: medium;
+    font-size: 20px;
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-family: font3;
 }
 .about-section {
     padding: 25px;
@@ -175,6 +110,32 @@
     border: 1px solid #e5e5e5;
     margin: 2rem 0;
   }
-  .fa-file-download{
-    content: "\f56d";
-}
+@font-face {
+    font-family:"font1";
+    src: url('../fonts/CharismaTF-Bold.woff2');
+   }
+   @font-face {
+    font-family:"font2";
+    src: url('../fonts/CharismaTF-Regular.woff2');
+   
+  }
+  @font-face {
+    font-family:"font3";
+    src: url('../fonts/CharismaTF-Light.woff2');
+   
+  }
+  @font-face {
+    font-family:"font4";
+    src: url('../fonts/CharismaTF-ExtraBold.woff2');
+   
+  }
+  .about-section img{
+    width: 15px;
+    height: 15px;
+  }
+  .about-section a{
+    color:var(--black);
+    font-family: font2;
+    font-size: 20px
+  }
+   
