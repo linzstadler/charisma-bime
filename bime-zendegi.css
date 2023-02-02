@@ -1,0 +1,19 @@
+@font-face {
+    font-family:"font1";
+    src: url('../fonts/CharismaTF-Bold.woff2');
+   }
+   @font-face {
+    font-family:"font2";
+    src: url('../fonts/CharismaTF-Regular.woff2');
+   
+  }
+  @font-face {
+    font-family:"font3";
+    src: url('../fonts/CharismaTF-Light.woff2');
+   
+  }
+  @font-face {
+    font-family:"font4";
+    src: url('../fonts/CharismaTF-ExtraBold.woff2');
+   
+  }
