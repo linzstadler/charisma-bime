@@ -140,7 +140,7 @@
 
 }
 .box > div:first-child{
-    width: 31.75rem;
+     flex: 0 0 6rem;
 }
 .box img{
     width: 100%;
