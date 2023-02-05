@@ -16,49 +16,291 @@
 <body>
     <header>
                 <!-- ---قسمت حاوی لوگو و لیست آبشاری----- -->
-
-        <div class="tophead">
-            <img src="logo.png"/>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  حساب کاربری
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">پنل کاربران بیمه گذاران</a></li>
-                  <li><a class="dropdown-item" href="#">پنل کابری مشاوران فروش</a></li>
-                  <li><a class="dropdown-item" href="#">پنل کاربری همکاران</a></li>
-                </ul>
+                <div class="tophead d-none d-md-block">
+                  <div class="container pt-2 pb-2 ">
+                  <div class="row">
+                    <div class="col text-start"><img class="base-logo" src="C:\Users\Guest\Documents\GitHub\charisma-bime\assets\image\logo.png"/></div>
+                    <div class="col text-end"><div class="dropdown">
+                      <button class="btn dropdown-toggle link-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        حساب کاربری
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">پنل کاربران بیمه گذاران</a></li>
+                        <li><a class="dropdown-item" href="#">پنل کابری مشاوران فروش</a></li>
+                        <li><a class="dropdown-item" href="#">پنل کاربری همکاران</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
-        </div>
-                 <!-------- قسمت پایین سربرگ . لیست------- -->
-
-        <nav>
-            <div class="bottomheader">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">صفحه اصلی</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">درباره ما</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link ">محصولات</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ">نرخ گیری و درخواست خرید</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link ">خدمات پس از فروش</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link ">سازمان فروش</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link ">شعب و امور مناطق</a>
-                      </li>
-                  </ul>
             </div>
-        </nav>
+                 <!-------- قسمت پایین سربرگ . لیست------- -->
+                 <!-- -------------------------------------display md------------------- -->
+                 <p class="collapse-tap ps-1 p-sm-3 pb-sm-0 d-xxl-none d-xl-none d-lg-none d-md-block d-sm-inline-block d-xs-inline-block p-xs-3 width-50">
+                  <a class="btn collapse-tap-1 p-3" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+                  <!-- <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Button with data-bs-target
+                  </button> -->
+                </p>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+                <!-- <span class="med-headset p-2 float-md-end"></span><span class="med-search"></span> -->
+                <!-- -------------------------------------display sm------------------- -->
+
+                <!-- ----------------------------------------------/ -->
+                 <div class="bottom-header justify-content-center p-md-1 p-sm-1">
+                  <ul class="nav justify-content-center d-none d-xxl-flex d-xl-flex d-lg-flex">
+                      <li class="nav-item login-nav">
+                        <a class="nav-link active" aria-current="page" href="#">صفحه اصلی</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">درباره ما</a>       <!-----------about us mega menu----------->
+                        <li class="nav-item product">
+                          <a class="nav-link" href="#">محصولات</a>
+                          <div class="tab-hover">
+                            <div class="conainer">
+                              <div class="row">
+                                <div class="col-lg-3 border-start">
+                                  <h3>خدمات بیمه ای</h3><br/>
+                                  <p>معرفی خدمات تخصصی بیمه عمر کاریزما</p><br/>
+                                  <div><img src="insuranceserv.jpg"/></div>
+                                </div>
+                                <div class="col-3">
+                                  <div class="row"><a href="#">سبد بیمه ای</a></div>
+                                  <div class="row">
+                                    <div class="col-12 mt-2 d-lg-flex flex-row">
+                                      <div class="dolar rounded-circle"><a href="#" class=""></a></div>
+                                      <div class=""><a class="fw-bold fs-6" href="#">عمر زمانی انفرادی</a></div>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                      <div class="col-12 mt-2 d-lg-flex flex-row">
+                                        <div class="dolar rounded-circle"><a href="#" class=""></a></div>
+                                        <div class=""><a class="fw-bold fs-6" href="#">عمر و حادثه انفرادی</a></div>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                      <div class="col-12 mt-2 d-lg-flex flex-row">
+                                        <div class="dolar rounded-circle"><a href="#" class=""></a></div>
+                                        <div class=""><a class="fw-bold fs-6" href="#">عمر و حادثه گروهی</a></div>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                      <div class="col-12 mt-2 d-lg-flex flex-row">
+                                        <div class="dolar rounded-circle"><a href="#" class=""></a></div>
+                                        <div class=""><a class="fw-bold fs-6" href="#">بیمه زندگی گروهی (طرح یاد)</a></div>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                      <div class="col-12 mt-2 d-lg-flex flex-row">
+                                        <div class="dolar rounded-circle"><a href="#" class=""></a></div>
+                                        <div class=""><a class="fw-bold fs-6" href="#">مانده بدهکار (بانکی/ سایر)</a></div>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                      <div class="col-12 mt-2 d-lg-flex flex-row">
+                                        <div class="dolar rounded-circle"><a href="#" class=""></a></div>
+                                        <div class=""><a class="fw-bold fs-6" href="#">تمام عمر</a></div>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                      <div class="col-12 mt-2 d-lg-flex flex-row">
+                                        <div class="dolar rounded-circle"><a href="#" class=""></a></div>
+                                        <div class=""><a class="fw-bold fs-6" href="#">افراد با شرایط خاص (تائید100% )</a></div>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                      <div class="col-12 mt-2 d-lg-flex flex-row">
+                                        <div class="dolar rounded-circle"><a href="#" class=""></a></div>
+                                        <div class=""><a class="fw-bold fs-6" href="#">افراد کلیدی سازمان ها</a></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-3">
+                                  <div class="row"><a href="#">سبد سرمایه گزاری</a></div>
+                                  <div class="row"><a class="fw-bold fs-6" href="#">سبد ترکیبی</a></div>
+                                  <div class="row">
+                                    <div class="col-12 mt-2 d-lg-flex flex-row">
+                                      <div class="dolar rounded-circle"><a href="#" class=""></a></div>
+                                      <div class=""><a class="fw-bold fs-6" href="#">(طرح ثمر) عمر اندوخته دار</a></div>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                      <div class="col-12 mt-2 d-lg-flex flex-row">
+                                        <div class="dolar rounded-circle"><a href="#" class=""></a></div>
+                                        <div class=""><a class="fw-bold fs-6" href="#">بیمه زندگی با مدیریت ثروت (سبک کاریزما)</a></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-3">
+                                  <div class="row"><a class="fw-bold fs-6" href="#">مستمری / بازنشستگی</a></div>
+                                  <div class="row">
+                                    <div class="col-12 mt-2 d-lg-flex flex-row">
+                                      <div class="dolar rounded-circle"><a href="#" class=""></a></div>
+                                      <div class=""><a class="fw-bold fs-6" href="#">مدت معین- قطعی-آنی</a></div>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                      <div class="col-12 mt-2 d-lg-flex flex-row">
+                                        <div class="dolar rounded-circle"><a href="#" class=""></a></div>
+                                        <div class=""><a class="fw-bold fs-6" href="#">مدت معین- قطعی- بافاصله</a></div>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                      <div class="col-12 mt-2 d-lg-flex flex-row">
+                                        <div class="dolar rounded-circle"><a href="#" class=""></a></div>
+                                        <div class=""><a class="fw-bold fs-6" href="#">مدت معین- به شرط حیات- آنی</a></div>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                      <div class="col-12 mt-2 d-lg-flex flex-row">
+                                        <div class="dolar rounded-circle"><a href="#" class=""></a></div>
+                                        <div class=""><a class="fw-bold fs-6" href="#">مدت معین- به شرط حیات- با فاصله</a></div>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                      <div class="col-12 mt-2 d-lg-flex flex-row">
+                                        <div class="dolar rounded-circle"><a href="#" class=""></a></div>
+                                        <div class=""><a class="fw-bold fs-6" href="#">مادام العمر با دوره تضمین</a></div>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                      <div class="col-12 mt-2 d-lg-flex flex-row">
+                                        <div class="dolar rounded-circle"><a href="#" class=""></a></div>
+                                        <div class=""><a class="fw-bold fs-6" href="#">مادام العمر بدون دوره تضمین</a></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">نرخ گیری و درخواست خرید</a>   <!---service mega menu-------- -->
+                      </li>
+                      <li class="nav-item service">
+                          <a class="nav-link" href="#">خدمات پس از فروش</a>
+                          <div class="tab-hover">
+                            <div class="container-fluid">
+                              <div class="row w-100">
+                                <div class="col-lg-3 border-start">
+                                  <h3>خدمات بیمه ای</h3><br/>
+                                  <p>معرفی خدمات تخصصی بیمه عمر کاریزما</p><br/>
+                                  <div><img src="insuranceserv.jpg"/></div><br/>
+                                  <button type="button" class="btn btn-outline-secondary rounded-pill">know more</button>
+                                </div>
+                                <div class="col-lg-4">
+                                  <div class="row"><a href="#">پرداخت ها (e pay)</a></div>
+                                  <div class="row">
+                                    <div class="col-12 mt-2 d-lg-flex flex-row">
+                                      <div class="rounded-circle green-grad base-png-tab-2 apartman"><a class="" href="#"></a></div>
+                                      <div class=""><a href="#"><span class="fs-6 fw-bold title">پرداخت قسط حق بیمه</span>
+                                        <br/>پرداخت اقساط بصورت آنلاین</a></div>
+                                    </div>
+                                    <div class="col-12 mt-2 d-lg-flex flex-row">
+                                      <div class="rounded-circle green-grad base-png-tab-2 wallet"><a class="" href="#"></a></div>
+                                      <div class=""><a href="#"><span class="fs-6 fw-bold title">سرمایه گذاری متفرقه</span>
+                                        <br/>سرمایه گذاری</a></div>
+                                    </div>
+                                    <div class="col-12 mt-2 d-lg-flex flex-row">
+                                      <div class="rounded-circle green-grad base-png-tab-2"><a class="" href="#"></a></div>
+                                      <div class=""><a href="#"><span class="fs-6 fw-bold title">پرداخت قسط وام / تامین مالی</span>
+                                        <br/>پرداخت قسط وام / تامین مالی</a></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-4">
+                                  <div class="row"><a href="#">سایر</a></div>
+                                  <div class="row">
+                                    <div class="col-12 mt-2 d-lg-flex flex-row">
+                                      <div class="rounded-circle green-grad base-png-tab-2 apartman"><a class="" href="#"></a></div>
+                                      <div class=""><a href="#"><span class="fs-6 fw-bold title">درخواست برداشت از حساب بیمه نامه</span>
+                                        <br/>برداشت وجه</a></div>
+                                    </div>
+                                    <div class="col-12 mt-2 d-lg-flex flex-row">
+                                      <div class="rounded-circle green-grad base-png-tab-2 wallet"><a class="" href="#"></a></div>
+                                      <div class=""><a href="#"><span class="fs-6 fw-bold title">درخواست تامین مالی / وام</span>
+                                        <br/>درخواست تامین مالی / وام</a></div>
+                                    </div>
+                                    <div class="col-12 mt-2 d-lg-flex flex-row">
+                                      <div class="rounded-circle green-grad base-png-tab-2"><a class="" href="#"></a></div>
+                                      <div class=""><a href="#"><span class="fs-6 fw-bold title">درخواست بازخرید / ابطال</span>
+                                        <br/>درخواست بازخرید / ابطال</a></div>
+                                    </div>
+                                    <div class="col-12 mt-2 d-lg-flex flex-row">
+                                      <div class="rounded-circle green-grad base-png-tab-2"><a class="" href="#"></a></div>
+                                      <div class=""><a href="#"><span class="fs-6 fw-bold title">درخواست تغییرات در بیمه نامه</span>
+                                        <br/>درخواست تغییرات در بیمه نامه</a></div>
+                                    </div>
+                                    <div class="col-12 mt-2 d-lg-flex flex-row">
+                                      <div class="rounded-circle green-grad base-png-tab-2"><a class="" href="#"></a></div>
+                                      <div class=""><a href="#"><span class="fs-6 fw-bold title">درخواست خسارت</span>
+                                        <br/>درخواست خسارت</a></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item company">
+                          <a class="nav-link" href="#">سازمان فروش</a>
+                          <div class="tab-hover">
+                            <div class="container-fluid pt-5 pb-5">
+                              <div class="row w-100 border-start">
+                                <div class="col-lg-3">
+                                  <h3>سازمان فروش</h3>
+                                  <p>به خانواده فروش کاریزما بپیوندید</p>
+                                  <div><img src="serv-after.jpg"/></div>
+                                  <button type="button" class="btn btn-outline-secondary rounded-pill">بیشتر</button>
+                                </div>
+                                <div class="col-lg-9">
+                                  <div class="row">
+                                    <div class="col-6 col-xl-4 mt-3 mb-3 d-lg-flex flex-row">
+                                      <div class="rounded-circle green-grad base-png-tab-3 apartman"><a href="#"></a></div>
+                                      <div class=""><a href="#"><span class="fs-6 fw-bold title">مشاوریاب</span>
+                                      <br/>
+                                    مشاوریاب</a></div>
+                                    </div>
+                                    <div class="col-6 col-xl-4 mt-3 mb-3 d-lg-flex flex-row">
+                                      <div class="rounded-circle green-grad base-png-tab-3 wallet"><a href="#"></a></div>
+                                      <div class=""><a href="#"><span class="fs-6 fw-bold title">کارگزاران</span>
+                                      <br/>
+                                      درخواست همکاری</a></div>
+                                    </div>
+                                    <div class="col-6 col-xl-4 mt-3 mb-3 d-lg-flex flex-row">
+                                      <div class="rounded-circle green-grad base-png-tab-3 paper"><a href="#"></a></div>
+                                      <div class=""><a href="#"><span class="fs-6 fw-bold title">نمایندگان</span>
+                                      <br/>
+                                      شرایط و فرآیند اعطاء کد نمایندگی</a></div>
+                                    </div>
+                                    <div class="col-6 col-xl-4 mt-3 mb-3 d-lg-flex flex-row">
+                                      <div class="rounded-circle green-grad base-png-tab-3"><a href="#"></a></div>
+                                      <div class=""><a href="#"><span class="fs-6 fw-bold title">پیوستن به #کاریزماتیم (به زودی)</span>
+                                      <br/>
+                                      (طرح پیوند) درخواست همکاری</a></div>
+                                    </div>
+                                    <div class="col-6 col-xl-4 mt-3 mb-3 d-lg-flex flex-row">
+                                      <div class="rounded-circle green-grad base-png-tab-3"><a href="#"></a></div>
+                                      <div class=""><a href="#"><span class="fs-6 fw-bold title">پیوستن به #کاریزماتیم (به زودی)</span>
+                                      <br/>
+                                      درخواست همکاری- ویژه دانشجویان رشته های مالی،بازرگانی و بیمه</a></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">شعب و امور مناطق</a>
+                        </li>
+                    </ul>
+              </div>  
     </header>
 
             <!-- ------------------main بخش ------------------>
@@ -76,14 +318,23 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="slide2.jpg.jpg" class="d-block w-100" alt="slide2.jpg">
+                    <img src="C:\Users\Guest\Documents\GitHub\charisma-bime\assets\image\slide2.jpg.jpg" class="d-block w-100" alt="slide2.jpg">
                   </div>
                   <div class="carousel-item">
-                    <img src="slide1.jpg.jpg" class="d-block w-100" alt="slide">
+                    <img src="C:\Users\Guest\Documents\GitHub\charisma-bime\assets\image\slide1.jpg.jpg" class="d-block w-100" alt="slide">
                   </div>
                   <div class="carousel-item">
-                    <video src="insurance.mp4" class="d-block w-100" alt="slide"></video>
-                    <video src="trip.mp4" class="d-block w-100" alt="slide"></video>
+                  
+                    <video autoplay muted loop>
+                      <source src="C:\Users\Guest\Documents\GitHub\charisma-bime\assets\videos\insurance.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div class="carousel-item">
+                    <video autoplay muted loop>
+                      <source src="C:\Users\Guest\Documents\GitHub\charisma-bime\assets\videos\trip.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -97,33 +348,35 @@
               </div>
         </div>
                <!-------------بخش جعبه محصولات -------------->
-        <div class="productbox">
-            <div class="producta"><a href="#">محصولات</a></div>
-            <div class="productitems">
-                <div class="subtems1">
-                    <div class="sublink"><a href="#"></a></div>
-                    <div class="sublink1"><a href="#">سبد پوشش های بیمه ای</a></div>
-                </div>
-                <div class="subtems2">
-                    <div class="sublink"><a href="#"></a></div>
-                    <div class="sublink1"><a href="#">سبد ترکیبی</a></div>
-                </div>
-                <div class="subtems3">
-                    <div class="sublink"><a href="#"></a></div>
-                    <div class="sublink1"><a href="#">مستمری/بازنشستگی</a></div>
-                </div>
-                <div class="subtems4">
-                    <div class="sublink"><a href="#"></a></div>
-                    <div class="sublink1"><a href="#">سایر بیمه ها بزودی...</a></div>
-                </div>
-            </div>
-        </div>
+               <div class="pro-box">
+                 <div class="container bg-white p-xl-5 overflow-auto">
+                   <div class=""><div class="col text-center"><h3><a class="link-secondary fw-bold" href="#">محصولات</a></h3></div></div>
+                   <div class="d-flex flex-row align-items-center justify-content-evenly">
+                     <div class="col-3 p-xl-5 m-xl-3 p-lg-5 m-lg-2 p-md-5 m-md-1 p-sm-3 m-sm-1">
+                       <div class="plus-box rounded-circle"><a href="#"></a></div><br/>
+                       <p><a class="link-dark" href="#">سبد پوشش های بیمه ای</a></p>
+                     </div>
+                     <div class="col-3 p-xl-5 m-xl-3 p-lg-5 m-lg-2 p-md-5 m-md-1 p-sm-3 m-sm-1">
+                      <div class="umbrela-box rounded-circle"><a href="#"></a></div><br/>
+                      <p><a class="link-dark"  href="#">سبد ترکیبی</a></p>
+                     </div>
+                     <div class="col-3 p-xl-5 m-xl-3 p-lg-5 m-lg-2 p-md-5 m-md-1 p-sm-3 m-sm-1">
+                      <div class="old-box rounded-circle"><a href="#"></a></div><br/>
+                      <p><a class="link-dark"  href="#"> مستمری/بازنشستگی</a></p>
+                     </div>
+                     <div class="col-3 p-xl-5 m-xl-3 p-lg-5 m-lg-2 p-md-5 m-md-1 p-sm-3 m-sm-1">
+                      <div class="flower-box rounded-circle"><a href="#"></a></div><br/>
+                      <p><a class="link-dark"  href="#"> سایر بیمه ها بزودی...</a></p>
+                     </div>
+                   </div>
+                 </div>
+               </div>
                   <!-- --------------بخش سایر مطالب----------- -->
         <div class="maincards">
             <div class="cardh2"><h2>سایر مطالب</h2></div>
             <di class="cardcomplex">
               <div class="card">
-                <img src="life.jpg"/>
+                <img src="C:\Users\Guest\Documents\GitHub\charisma-bime\assets\image\life.jpg"/>
                 <div class="cardh3"><a href="#"><h3>داستان کوتاه</h3></a></div>
                 <div class="cardh4"><h4>قسمت اول</h4></div>
                 <div class="cardparagraph">
@@ -131,7 +384,7 @@
                   <span class="cardbottom"><a href="#">ادامه مطلب</a></span>
               </div>
               <div class="card">
-                <img src="image2.jpg"/>
+                <img src="C:\Users\Guest\Documents\GitHub\charisma-bime\assets\image\image2.jpg"/>
                 <div class="cardh3"><a href="#"><h3>داستان کوتاه</h3></a></div>
                 <div class="cardh4"><h4>قسمت اول</h4></div>
                 <div class="cardparagraph">
@@ -139,7 +392,7 @@
                   <span class="cardbottom"><a href="#">ادامه مطلب</a></span>
               </div>
               <div class="card">
-                <img src="story.jpg"/>
+                <img src="C:\Users\Guest\Documents\GitHub\charisma-bime\assets\image\story.jpg"/>
                 <div class="cardh3"><a href="#"><h3>داستان کوتاه</h3></a></div>
                 <div class="cardh4"><h4>قسمت اول</h4></div>
                 <div class="cardparagraph">
@@ -149,77 +402,67 @@
             </di>
         </div>
                 <!-- ---------------بخش اخبار---------- -->
-                <div class="news">
-                  <h1 class="h1new">اخبار و اطلاعیه ها</h1>
-                  <div class="paper1">
-                      <div class="h21"><a href="#"><h2>صدور مجوز فعالیت شرکت تخصصی بیمه زندگی کاریزما</h2></a></div>
-                       <div class="newsp"><p>اخبار</p></div>
-                       <div class="h6news"><h6>تاریخ خبر 12/09/1401
-                      </h6></div>
-                      <div class="lang"><p>&lang;</p></div>
-                     
-                  </div>
-                  <div class="paper1">
-                      <div class="h21"><a href="#"><h2>همایش روز ملی بیمه و حضور مدیران شرکت بیمه زندگی کاریزما</h2></a></div>
-                       <div class="newsp"><p>اخبار</p></div>
-                       <div class="h6news"><h6>تاریخ خبر 13/09/1401
-                      </h6></div>
-                      <div class="lang"><p>&lang;</p></div>
-                     
-                  </div><div class="paper1">
-                      <div class="h21"><a href="#"><h2>برگزاری مجمع موسسین شرکت بیمه زندگی کاریزما</h2></a></div>
-                       <div class="newsp"><p>اخبار</p></div>
-                       <div class="h6news"><h6>تاریخ خبر 13/09/1401
-                      </h6></div>
-                      <div class="lang"><p>&lang;</p></div>
-                     
-                  </div>
-                  <div class="more"><a href="#">بیشتر</a></div>
-              </div>
-              </div>
+                <div class="container bg-white text-center">
+                  <div class="row"><div class="col fs-1 fw-bold">اخبار و اطلاعیه ها</div></div>
+                  <div class="row border-top"><div class="col text-end">
+                    <a href="#" class="link-dark fs-3">صدور مجوز فعالیت شرکت تخصصی بیمه زندگی کاریزما</a><br/>
+                    <p class="text-start fs-3 fw-bold text-secondary">&lang;</p>
+                    <span class="border rounded-pill pt-1 pb-1 pe-3 ps-3 me-3">اخبار</span><span>تاریخ خبر 12/09/1401</span>
+                  </div></div>
+                  <div class="row border-top mt-3"><div class="col text-end">
+                    <a href="#" class="link-dark fs-3">همایش روز ملی بیمه و حضور مدیران شرکت بیمه زندگی کاریزما</a><br/>
+                    <p class="text-start fs-3 fw-bold text-secondary">&lang;</p>
+                    <span class="border rounded-pill pt-1 pb-1 pe-3 ps-3 me-3">اخبار</span><span>تاریخ خبر 13/09/1401</span>
+                  </div></div>
+                  <div class="row border-top mt-3"><div class="col text-end">
+                    <a href="#" class="link-dark fs-3">برگزاری مجمع موسسین شرکت بیمه زندگی کاریزما</a><br/>
+                    <p class="text-start fs-3 fw-bold text-secondary">&lang;</p>
+                    <span class="border rounded-pill pt-1 pb-1 pe-3 ps-3 me-3">اخبار</span><span>تاریخ خبر 13/09/1401</span>
+                  </div></div>
+                  <div class="row mt-5 mb-5"><div class="col"><button type="button" class="btn btn-danger rounded-pill fs-5 ps-5 pe-5">بیشتر</button></div></div>
+                </div>
     </main>
     <!-- ----------------------footer------------- -->
     <footer>
-      <div class="mainfooter">
-       <div class="submain sublogo">
-         <div class="up">
-           <div class="upleft">
-             پشتیبانی 24 ساعته<br/>
-             <a href="tel:+9841000">(021)41000</a>
-           </div>
-           <div class="upright">نماد الکترونیکی</div>
-         </div>
-         <div class="botlogo">
-           <div class="sublogo"><img src="logo(1).png"/></div>
-         </div>
-       </div>
-        <div class="submain sub">
-          <h2><a href="#">لینک های مرتبط</a></h2>
-          <ul class="subul">
-            <li><a href="#">گروه مالی کاریزما</a></li>
-            <li><a href="#">امور سهام</a></li>
-            <li><a href="#">پیشنهادات و انتقادات</a></li>
-            <li><a href="#">ارتباط با مدیرعامل</a></li>
-            <li><a href="#">گزارشگری و افشای اطلاعات</a></li>
-            <li><a href="#">قوانین و اصطلاحات بیمه ای</a></li>
-            <li><a href="#">درخواست همکاری</a></li>
-          </ul>
+      <div class="container text-start footer-title">
+        <div class="row p-5">
+          <div class="col footer-comp-1">
+            <h3 class=""><a href="#" class="link-info ">پیوندها</a></h3><br/>
+            <a href="#" class="link-light fs-6 d-block mb-2">بیمه مرکزی جمهوری اسلامی ایران</a><br/>
+            <a href="#"  class="link-light fs-6 d-block mb-2">سندیکای بیمه گران ایران</a><br/>
+            <a href="#" class="link-light fs-6 d-block mb-2">پژوهشکده بیمه</a><br/>
+            <a href="#"  class="link-light fs-6 d-block mb-2">سامانه اطلاع رسانی ناشران کدال</a>
+          </div>
+          <div class="col footer-comp-2">
+            <h3 class=""><a href="#" class="link-info">لینک های مرتبط</a></h3><br/>
+            <a href="#" class="link-light fs-6 d-block mb-2">گروه مالی کاریزما</a><br/>
+            <a href="#" class="link-light fs-6 d-block mb-2">امور سهام</a><br/>
+            <a href="#" class="link-light fs-6 d-block mb-2">پیشنهادات و انتقادات</a><br/>
+            <a href="#" class="link-light fs-6 d-block mb-2">پیشنهادات و انتقادات</a><br/>
+            <a href="#" class="link-light fs-6 d-block mb-2">گزارشگری و افشای اطلاعات</a><br/>
+            <a href="#" class="link-light fs-6 d-block mb-2">قوانین و اصطلاحات بیمه ای</a><br/>
+            <a href="#" class="link-light fs-6 d-block mb-2">درخواست همکاری</a>
+          </div>
+          <div class="col footer-comp-3 container text-center">
+            <div class="row">
+              <div class="col">
+                <h4 class="fs-5 link-info">نماد الکترونیکی</h4><br>
+              </div>
+              <div class="col">
+                <h4 class="fs-5 link-info">پشتیبانی 24 ساعته</h4><br>
+                <a href="#" class="link-warning">(021)41000</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col bg-dark"><img src="footerlogo.png"/></div>
+            </div>
+          </div>
         </div>
-        <div class="submain sub">
-          <h2><a href="#">پیوندها</a></h2>
-          <ul class="subul">
-            <li><a href="#">بیمه مرکزی جمهوری اسلامی ایران</a></li>
-            <li><a href="#">سندیکای بیمه گران ایران</a></li>
-            <li><a href="#">پزوهشکده بیمه</a></li>
-            <li><a href="#">سامانه اطلاع رسانی ناشران کدال</a></li>
-          </ul>
-        </div>
-        </div>
-        
+      </div>
       <div class="subfooter">
         <div class="bottomfooter">
-          <div class="copyright">تمامی حقوق وب سایت برای بیمه کاریزما محفوظ است.</div>
-          <div class="followus">ما را دنبال کنید.</div>
+          <div class="copyright fw-lighter fs-6">تمامی حقوق وب سایت برای بیمه کاریزما محفوظ است.</div>
+          <div class="followus fw-lighter fs-6">ما را دنبال کنید.</div>
           <div class="social">
             <a href="#"></a>
             <a href="#"></a>
@@ -229,5 +472,20 @@
         </div>
       </div>
     </footer>
+    <div class="fixed-options d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none">
+      <div class="share-icon"><img class="top-share" src="share-23642.png"/><a href="#"></a>
+        <div class="side-icons">
+          <div class="facebook"><a href="#"><img class="sub-face" src="facebook.png"/></a></div>
+          <div class="wechat"><a href="#"><img class="sub-wechat" src="wechat.png"/></a></div>
+          <div class="watsapp"><a href="#"><img class="sub-whats" src="whatsapp.png"/></a></div>
+          <div class="vibe"><a href="#"><img class="messenger" src="messenger.png"/></a></div>
+          <div class="line"><a href="#"><img class="sub-line" src="line-logo.png"/></a></div>
+          <div class="message"><a href="#"><img class="sub-message" src="message-16.png"/></a></div>
+          <div class="sub-share"><a href="#"><img class="share" src="share-23642.png"/></a></div>
+        </div>
+        </div>
+        <div class="backup"><a href="#"><img class="headset" src="headset.png"/></a></div>
+      </div>
+       <div class="arrow arrow-handler"><button><img class="arrow-up" src="arrow-up.png"/></button></div>
 </body>
 </html>
