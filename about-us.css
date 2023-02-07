@@ -17,3 +17,7 @@
     src: url('../fonts/CharismaTF-ExtraBold.woff2');
    
   }
+  .content.image{
+    width: 100%;
+    height: 500px;
+  }

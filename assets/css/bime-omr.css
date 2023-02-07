@@ -109,6 +109,16 @@
     padding: 2rem 4rem;
     border: 1px solid #e5e5e5;
     margin: 2rem 0;
+    display: inline-block;
+position: relative; 
+z-index: 1;
+  }
+  .about-section span{
+    display: inline-block;
+  }
+  .about-section object{
+    position: relative; 
+z-index: -1
   }
 @font-face {
     font-family:"font1";
