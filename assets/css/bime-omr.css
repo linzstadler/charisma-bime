@@ -1,32 +1,37 @@
 .header h1 {
     color: var(--black);
     font-size: 3.125rem;
-    font-family:font4;
+    font-family: font4;
     margin-top: 0.625rem;
 }
+
 .text-center {
     text-align: center !important;
-   
-    color:var(--black);
+
+    color: var(--black);
     margin: 3vh 0 1.5vh 0;
     text-align: center;
     display: block;
 
 }
- .header p {   /*line-height: 1.5em;*/
-    
+
+.header .text-header {
+    /*line-height: 1.5em;*/
+
     /*width:*/
-    text-align:justify;
-    font-size: large;
-    font-family:font2 ;
-    letter-spacing: 2px;
+    text-align: center;
+    color: #666;
+    font-size: 25px;
+    font-family: font2;
+    letter-spacing: normal;
     width: 78.125rem;
     margin: 25px 40px 25px 3px;
+    display: block;
 }
 
 .content .image .karizma {
     width: 100%;
-    height:500px;
+    height: 500px;
     vertical-align: middle;
     border-style: none;
     border-top-style: none;
@@ -35,72 +40,83 @@
     border-left-style: none;
     display: inline-block;
 }
-.end{
-    
-    color:var(--white) !important;
+
+.end {
+
+    color: var(--white) !important;
     background-color: rgba(0, 0, 0, 0.6);
     display: block;
     text-align: center;
     padding: 100px 50px;
     font-size: 32px;
-   }
-    
-.end.figcaption{
+}
+
+.end.figcaption {
     color: var(--white);
     text-decoration-line: none;
-    font-style:oblique;
-    text-align:center;
+    font-style: oblique;
+    text-align: center;
     margin-top: 1rem;
     display: block;
-     padding:  50px;
+    padding: 50px;
     font-size: 32px;
     font-family: font4;
 }
-    
-.btn{
-        display: inline-block;
-        padding: 0.5em 2em;
-        color:var(--white);
-        text-decoration: none;
-        border-radius:1.5625em;
-        border-color: 2px solid var(--white);
-        margin-top: 1rem !important;
-        font-family: font3;
-    }
-    
-.box{
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 2em;
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 1.5625em;
+    border-color: 2px solid var(--white);
+    margin-top: 1rem !important;
+    font-family: font3;
+}
+
+.box {
     display: flex;
+    align-items: center;
 
 }
-.box > div:first-child{
-     flex: 0 0 6rem;
+
+.box>div:first-child {
+    flex: 0 0 6rem;
 }
-.box img{
+
+.box img {
     width: 100%;
     
+
 }
-.box p {
+
+.box .discription {
     color: #f39800;
     margin-bottom: 0.5rem;
     font-family: font2;
     width: 450px;
     margin: 1em;
-    font-size: 1.5rem!important;
+    font-size: 1.5rem !important;
+    text-align: right;
 }
-.result h2{
+
+.result h2 {
     margin-bottom: 0.5rem;
+    margin-top: 2rem;
     font-family: font2;
     font-weight: 400;
     line-height: 1.2;
     font-size: 35px !important;
     text-align: right;
 }
-.result h3{
+
+.result h3 {
     text-align: right;
     font-size: 20px;
     margin-bottom: 1rem;
     font-family: font3;
 }
+
 .about-section {
     padding: 25px;
     text-align: center;
@@ -110,42 +126,56 @@
     border: 1px solid #e5e5e5;
     margin: 2rem 0;
     display: inline-block;
-position: relative; 
-z-index: 1;
-  }
-  .about-section span{
+    position: relative;
+    z-index: 1;
+}
+
+.about-section span {
     display: inline-block;
-  }
-  .about-section object{
-    position: relative; 
-z-index: -1
-  }
+}
+
+.about-section object {
+    position: relative;
+    z-index: -1
+}
+
 @font-face {
-    font-family:"font1";
+    font-family: "font1";
     src: url('../fonts/CharismaTF-Bold.woff2');
-   }
-   @font-face {
-    font-family:"font2";
+}
+
+@font-face {
+    font-family: "font2";
     src: url('../fonts/CharismaTF-Regular.woff2');
-   
-  }
-  @font-face {
-    font-family:"font3";
+
+}
+
+@font-face {
+    font-family: "font3";
     src: url('../fonts/CharismaTF-Light.woff2');
-   
-  }
-  @font-face {
-    font-family:"font4";
+
+}
+
+@font-face {
+    font-family: "font4";
     src: url('../fonts/CharismaTF-ExtraBold.woff2');
-   
-  }
-  .about-section img{
+
+}
+
+.about-section img {
     width: 15px;
     height: 15px;
-  }
-  .about-section a{
-    color:var(--black);
+}
+
+.about-section a {
+    color: var(--black);
     font-family: font2;
     font-size: 20px
-  }
-   
+}
+
+.icon {
+    display: inline-block;
+    width: 15px;
+    margin-left: 5px;
+    fill:black;
+}
