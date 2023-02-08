@@ -31,11 +31,18 @@ header .collapse{
 .list-md li:hover {
     color: var(--black);
 }
+/* --------------------------------------------main--------- */
 main .main-label a:hover{
     color: var(--white);
 }
 .top-h1-main{
     font-size: 75px;
+}
+main .sub-link-main{
+    background-color:rgba(0, 0, 0, 0.6);
+}
+main .sub-link-main:hover{
+    background-color:rgba(0, 0, 0, 0.4);
 }
 /* ------------------------------------footer */
 footer{
@@ -194,6 +201,14 @@ footer .face , .youtube , .linkedin , .insta{
 .backup .headset{
     width: 1.8rem;
     margin: 1rem;
+}
+.backup{
+    transition: .5s;
+}
+.backup:hover{
+    filter: brightness(1.15);
+    box-shadow: inset 0 0 15px -5px;
+    transition: .5s;
 }
 .share-icon{
     background-color: #95D03A;
