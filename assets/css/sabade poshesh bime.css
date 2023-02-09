@@ -39,10 +39,12 @@ body,html{
 }
 .border{
     background: var(--white);
+
 }
 .row-box{
     background: var(--white);
-    display: block;
+    display:inline-block;
+    
     
 }
 
@@ -80,7 +82,7 @@ span{
 
 .row h2 {
     color: var(--black);
-    font-family: font1;
+    font-family: font2;
     font-size: 30px;
     text-align: right;
     margin-top: 0;
