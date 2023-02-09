@@ -1,0 +1,123 @@
+@font-face {
+    font-family:"font1";
+    src: url('../fonts/CharismaTF-Bold.woff2');
+   }
+   @font-face {
+    font-family:"font2";
+    src: url('../fonts/CharismaTF-Regular.woff2');
+   
+  }
+  @font-face {
+    font-family:"font3";
+    src: url('../fonts/CharismaTF-Light.woff2');
+   
+  }
+  @font-face {
+    font-family:"font4";
+    src: url('../fonts/CharismaTF-ExtraBold.woff2');
+   
+  }
+  .border{
+    border:1px solid var(--white);
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px
+  }
+
+  
+  .header h1
+  {
+    text-align: center;
+    display: block;
+    padding-left: 200px;
+    padding-right: 300px;
+    max-width: 100%
+    
+}
+  .content1  h2
+  {
+    color:var(--black);
+    line-height: 1.2;
+    margin: 30px 10px 15px 10px;
+    display: block;
+    text-align: right !important;
+    transition: width 0.5s, height 0.5s, transform 0.5s;
+  }
+  
+  .row h3
+  {
+    color: var(--black);
+    font-family: font2;
+    font-size: 20px
+
+  }
+  h4{
+    text-align: left;
+    font-size: 16px !important;
+    margin-top: 0;
+    color:var(--black);
+    margin-bottom: 5px;
+    padding: 0;
+}
+.icon svg{
+  display: inline-block;
+    width: 15px;
+    margin-left: 5px;
+    color:#f39800;
+  }
+  .container article {
+  
+    width: 300px;
+    border: 2px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+/*.body{
+  height: 100vh;
+  background-color: #eee;
+  font-family:font3 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}*/
+.myimage
+{
+width: 450px;
+height: 300px;
+border-radius: 18px;
+overflow: hidden;
+position: relative;
+box-shadow: 0 3px 6px rgba(0,0,0,0,16),0 3px 6px rgba(0,0,0,0,23);
+
+}  
+.myimage img{
+width: 12px;
+height: 20px;
+object-fit: cover;
+transition: transform .2s ease-in-out;
+
+}
+.myimage:hover img{
+  transform: scale(1,1);
+
+}
+.content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: cornflowerblue;
+  color: #fff;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+
+}
+.myimage:hover .content{
+  opacity: 0.9;
+  
+}
