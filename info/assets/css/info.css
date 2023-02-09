@@ -44,9 +44,17 @@ main .align-h1 h1{
 .cent-colap .btn-cul{
     background-color: var(--grey-1);
 }
+main .reportCollapse .icons {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
 main .cent-colap svg{
     fill: var(--grey-5);
     vertical-align: sub;
+}
+main .collapsePlus {
+    display: none;
 }
 /* ------------------------------------footer */
 footer{
