@@ -1,0 +1,458 @@
+@font-face {
+    font-family: 'CharismaTF';
+    src: url('../fonts/CharismaTF-Regular.woff2') format('woff2'),
+    url('../fonts/CharismaTF-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'CharismaTF';
+    src: url('../fonts/CharismaTF-Bold.woff2') format('woff2'),
+    url('../fonts/CharismaTF-Bold.woff') format('woff');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'CharismaTF';
+    src: url('../fonts/CharismaTF-ExtraBold.woff2') format('woff2'),
+    url('../fonts/CharismaTF-ExtraBold.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'CharismaTF';
+    src: url('../fonts/CharismaTF-Light.woff2') format('woff2'),
+    url('../fonts/CharismaTF-Light.woff') format('woff');
+    font-weight: 300;
+}
+
+body {
+    font-family: 'CharismaTF', sans-serif;
+    font-weight: 400;
+}
+*{
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+    text-decoration: none;
+    list-style-type: none;
+}
+.tophead{
+    background-color:var(--grey-1);
+    min-width: 992px;
+}
+.topheader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: .8rem 7rem;
+}
+.tophead .chines-written{
+    display: flex;
+}
+.tophead .chines-written a{
+    text-decoration: none;
+    margin: .2rem;
+    font-size: .8rem;
+    color: var(--grey-5);
+}
+.tophead .chines-written a:nth-child(3){
+    color: var(--black);
+    font-weight: bold;
+}
+.tophead .chines-written svg{
+    height: 1.3rem;
+}
+.tophead .btn{
+    direction: ltr;
+    background: none;
+    border: 0;
+    color: var(--grey-2);
+    font-size: .85rem;
+}
+.tophead .btn:hover{
+    background: none;
+}
+.tophead .dropdown-menu{
+    text-align: left;
+    font-size: .86rem;
+}
+/* ------------------------------------------پایان بخش top header--------------- */
+/* ---------------------------------------------بخش bottom header  مگا منو   و----------- */
+.bottom-header .logo-image{
+    width: 12%;
+}
+.bottom-header{
+    display: flex;
+    padding: .8rem 7rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey-9);
+    position: relative;
+}
+.bottom-header .nav-link{
+    color: var(--black);
+    font-size: .8rem;
+    padding: .3rem 1.5rem;
+}
+.bottom-header .active{
+    color: white;
+    background-color: var(--orange-1);
+    border-radius: 25px;
+    position: relative;
+}
+.bottom-header .tab-hover{
+    position: absolute;
+    background-color: white;
+    right: 0;
+    padding: 2rem;
+    z-index: 10;
+    width: 100%;
+    border-top: 1px solid var(--black);
+    display: none;
+}
+.service-nav:hover .tab-hover , .about-nav:hover .tab-hover{
+    display: block;
+}
+.left-3-including{
+    text-align: left;
+    border-right: 1px solid var(--cyan-1);
+}
+.left-3-including .btn-outline-secondary{
+    border-radius: 20px;
+    margin: 1.5rem;
+}
+.tab-hover .row , .col{
+    direction: ltr;
+}
+.right-3-including .sub-icon{
+    display: flex;
+    direction: ltr;
+}
+.icon-sub-title{
+    text-align: left;
+    margin-left: .5rem;
+}
+.icon-sub-title p{
+    font-size: .68rem;
+}
+.sub-icon a{
+    color: var(--black);
+}
+/* ----------------------------------login mega menu styles-------------- */
+
+/* -------------------------------about mega menu styles-------------- */
+.sub-2-1 .icon-sub-1{
+    width: 6.5rem;
+    height: 3.5rem;
+    background-image: url(apartman.png) ,linear-gradient( 45deg, #31AA8D 0%, #80CD61 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 35px;
+}
+.sub-2-2 .icon-sub-1{
+    width: 4rem;
+    height: 3.5rem;
+    background-image: url(handshake.png) ,linear-gradient( 45deg, #31AA8D 0%, #80CD61 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 35px;
+}
+.sub-2-3 .icon-sub-1{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-image: url(wallet.png) ,linear-gradient( 45deg, #31AA8D 0%, #80CD61 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 35px;
+}
+.sub-2-4 .icon-sub-1{
+    width: 6.5rem;
+    height: 3.5rem;
+    background-image: url(paper.png) ,linear-gradient( 45deg, #31AA8D 0%, #80CD61 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 35px;
+}
+/* --------------------------------------services mega menu styles-------------------- */
+.icon-sub-1 img{
+    width: 3rem;
+    height: 3rem;
+}
+/* ------------------------------------------------------------main start------------------------------------ */
+main .main-label a{
+    text-decoration: none;
+    color: var(--white);
+    margin: .5rem;
+    font-size: .8rem;
+}
+main .main-label{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;padding: .7rem;
+    border-radius: 10px;
+    right: 7rem;
+}
+main .main-label a:hover{
+    color: var(--black);
+}
+/* ------------------------------------------------------------------------------footer--------------------------------- */
+footer{
+    background-color: var(--grey-6);
+}
+/* .mainfooter{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+} */
+.container a{
+    text-decoration: none;
+}
+.container a:hover{
+    color: var(--brown-1);
+}
+.sub {
+    text-align: left;
+    padding: 1rem;
+}
+.sub h2{
+    font-size: 1.3rem;
+}
+.sub h2 a{
+    color:#adb5bd;
+}
+.subul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.subul li a{
+    color: var(--white);
+}
+.subul li{
+    padding: .7rem 0;
+}
+.sublogo .up{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    color:#adb5bd ;
+}
+.botlogo .sublogo{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--grey-8);
+}
+.container .twice-logo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--cyan-1);
+}
+.subfooter{
+    max-width: 69.3rem;
+    margin: auto;
+    border-top: 1px solid var(--cyan-1);
+}
+.bottomfooter{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    color: var(--cyan-1);
+}
+.bottomfooter .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.social a{
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 15px;
+    background-color: var(--cyan-1);
+    margin: .5rem;
+}
+.social a:hover{
+    background-color:var(--brown-1) ;
+}
+.subfooter .policy{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.subfooter .terms{
+    display: flex;
+    margin: .5rem .8rem;
+    font-size: .9rem;
+    border-right: 1px solid var(--cyan-1);
+    padding-right: 1rem;
+}
+.policy .lastterm{
+    border: none !important;
+}
+.policy a{
+    text-decoration: none;
+    color: var(--cyan-1);
+}
+.policy a:hover{
+    color: var(--brown-1);
+}
+
+/* ------------------------------------------------------- */
+.fixed-options{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+.side-icons{
+    position: fixed;
+    right: -4rem;
+    bottom: 8rem;
+    transition: .4s;
+}
+.share-icon , .backup , .arrow , .facebook , .wechat , .watsapp , .vibe , .line , .message , .sub-share {
+    width: 4rem;
+    height: 4rem;
+    margin: 0;
+}
+.share-icon{
+    background-color: #95D03A;
+    box-shadow:inset 0 0 20px -10px;
+}
+.share-icon .top-share{
+    margin: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.sub-share img{
+    width: 2rem;
+    height: 2rem;
+}
+.share-icon:hover .side-icons{
+    right: 0;
+    transition: .4s;
+}
+.backup{
+    background-color: #95D03A;
+}
+.arrow{
+    background-color: white;
+}
+.facebook{
+    background-color: #4267b2;
+}
+.wechat{
+    background-color: #4EC034;
+}
+.watsapp{
+    background-color: #25d366;
+}
+.vibe{
+    background-color: #448AFF;
+}
+.line{
+    background-color: #00c300;
+}
+.message{
+    background-color: #7d7d7d;
+}
+.sub-share{
+    background-color: #95D03A;
+}
+.arrow svg{
+    width: 2rem;
+    height: 2rem;
+}
+.sub-share img{
+    margin: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: .5s;
+}
+.sub-share:hover .share{
+    transform: translateX(10px);
+    transition: .5s;
+}
+.sub-message{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    transition: .5s;
+}
+.message:hover .sub-message{
+    transform: translateX(10px);
+    transition: .5s;
+}
+.line .sub-line{
+    width: 7rem;
+    height: 4rem;
+    margin-right: -1.5rem;
+    transition: .5s;
+}
+.line:hover .sub-line{
+    transform: translateX(10px);
+    transition: .5s;
+}
+.vibe .messenger{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    transition: .5s;
+}
+.vibe:hover .messenger{
+    transform: translateX(10px);
+    transition: .5s;
+}
+.watsapp .sub-whats{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    transition: .5s;
+}
+.watsapp:hover .sub-whats{
+    transform: translateX(10px);
+    transition: .5s;
+}
+.wechat .sub-wechat{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    border-radius: 20px;
+    transition: .5s;
+}
+.wechat:hover .sub-wechat{
+    transform: translateX(10px);
+    transition: .5s;
+}
+.facebook .sub-face{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    transition: .5s;
+    background-color: var(--white);
+    border-radius: 30px;
+}
+.facebook:hover .sub-face{
+    transform: translateX(10px);
+    transition: .5s;
+}
+@media screen and (min-width: 600px) and (max-width: 991px) {
+    .tophead .topheader {
+        padding: 0 7rem;
+    }
+}
