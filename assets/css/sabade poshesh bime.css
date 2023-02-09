@@ -20,6 +20,9 @@
     src: url('../fonts/CharismaTF-ExtraBold.woff2');
 
 }
+body,html{
+    background:#eee;
+}
 
 .border .plus-box {
     background-image: url(plus.png), linear-gradient(41deg, #0C3148 0%, #D20B10 100%);
@@ -29,6 +32,14 @@
     height: 150px;
     margin: auto;
     display: block;
+    
+    
+}
+.border{
+    background: var(--white);
+}
+.row-box{
+    background: var(--white);
 }
 
 .rounded-circle {
@@ -45,13 +56,15 @@
     text-align: center;
 }
 
-.content1 h2 {
+.content1 {
     color: var(--black);
     line-height: 1.2;
-    margin: 30px 10px 15px 10px;
+    margin-bottom: 0.5rem;
     display: block;
     text-align: right !important;
     transition: width 0.5s, height 0.5s, transform 0.5s;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .row h3 {
@@ -60,9 +73,9 @@
     font-size: 20px
 }
 
-h4 {
-    text-align: left;
-    font-size: 16px !important;
+h2 {
+    text-align: right;
+    font-size: 20px !important;
     margin-top: 0;
     color: var(--black);
     margin-bottom: 5px;
@@ -70,11 +83,16 @@ h4 {
 }
 
 .icon svg {
-    display: inline-block;
-    width: 15px;
-    margin-left: 5px;
+    
+    width: 1rem;
+    margin: 1rem;
     fill: #f39800;
+    text-align: right;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    justify-self:center;
 }
+
 
 .container article {
 border: 2px solid var(--white);
@@ -131,11 +149,15 @@ border: 2px solid var(--white);
     padding-top: 30px;
     padding-bottom: 25px;
     flex: 1;
+    display: flex;
+    justify-self:center;
+    
 
 }
 
 .myimage:hover .content {
     opacity: 1;
+    
 
 
 }
@@ -147,7 +169,6 @@ border: 2px solid var(--white);
 .content a {
     align-items: center;
     background-color: #D20A11;
-    border-radius: 3px;
     color: var(--white);
     margin-top: 300px;
     padding: 10px 15px;
