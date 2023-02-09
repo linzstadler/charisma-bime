@@ -8,28 +8,104 @@
 header .tophead{
     background-color: var(--grey-1);
 }
-@media screen and (max-width: 576px){
-    .tophead {
-        display: none;
+.bottom-header .nav > a{
+    font-size: .73rem;
+    padding: 1rem 1.8rem;
+}
+.bottom-header .nav a{
+    color:var(--black);
+}
+.bottomheader ul{
+    position: relative;
+}
+/* ------------------------------------------------------قسمت اول لیست مگا منو از بخش محصولات----------------------- */
+/* --------------------------------medium size edition---------------- */
+.collapse-tap-1{
+    background-image: url(../image/menu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.collapse .plus-span{
+    fill: var(--grey-5);
+    display: inline-block;
+    width: 40px;
+}
+@media screen and (max-width: 575px) {
+    .collapse-tap {
+        padding: .75rem;
+        margin-bottom: 0;
     }
 }
-@media screen and (max-width: 576px){
-    .bh-nav {
-        display: none;
-    }
+.bottom-header{
+    display: flex;
+    padding: .8rem 7rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey-9);
+    position: relative;
+    /* direction: ltr; */
 }
-header .coll-aps{
-    box-shadow: none !important ;
-}
-header .card-body{
-    width: 128%;
-    z-index: 0;
-}
-header .collapse{
-    margin-top: 3.5rem;
-}
-.list-md li:hover {
+.bottom-header .nav-link{
     color: var(--black);
+    font-size: .8rem;
+    padding: .3rem 1.5rem;
+}
+.bottom-header .active{
+    position: relative;
+}
+.bottom-header .tab-hover{
+    position: absolute;
+    background-color: white;
+    right: 0;
+    padding: 2rem;
+    z-index: 15;
+    width: 100%;
+    border-top: 1px solid var(--black);
+    display: none;
+}
+.service:hover .tab-hover , .product:hover .tab-hover , .company:hover .tab-hover{
+    display: block;
+}
+.product .dolar{
+    background-image: linear-gradient(41deg, #0C3148 0%, #D20B10 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 52px;
+    height: 52px;
+    overflow: hidden;
+}
+/* ---------------------------------------------بخش دوم قسمت مگامنو-------------- */
+.service .dolar{
+    background-image: linear-gradient(45deg, #31AA8D 0%, #80CD61 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 52px;
+    height: 52px;
+    overflow: hidden;
+}
+.service .apartman{
+    background-image: url(apartman.png) , linear-gradient(45deg, #31AA8D 0%, #80CD61 100%);
+}
+.service .wallet{
+    background-image: url(wallet.png) , linear-gradient(45deg, #31AA8D 0%, #80CD61 100%);
+}
+.company .dolar{
+    background-image: linear-gradient(45deg, #31AA8D 0%, #80CD61 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 52px;
+    height: 52px;
+    overflow: hidden;
+}
+.company .apartman{
+    background-image: url(apartman.png) , linear-gradient(45deg, #31AA8D 0%, #80CD61 100%);
+}
+.company .wallet{
+    background-image: url(wallet.png) , linear-gradient(45deg, #31AA8D 0%, #80CD61 100%);
+}
+.company .paper{
+    background-image: url(paper.png) , linear-gradient(45deg, #31AA8D 0%, #80CD61 100%);
 }
 /* --------------------------------------------main--------- */
 main .main-label a:hover{
@@ -56,69 +132,35 @@ main .cent-colap svg{
 main .collapsePlus {
     display: none;
 }
+@media screen and (max-width:991px) {
+    main .enter-link{
+        border:none;
+    }
+}
+@media screen and (min-width:992px) {
+    main .enter-link{
+        border:1px solid var(--grey-5);
+    }
+}
+main .reportCollapse .icons {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+main .collapsePlus , main .collapsemenius{
+    margin-left: 5px;
+    padding: 15px;
+    fill: var(--white);
+}
 /* ------------------------------------footer */
 footer{
     background-color: var(--grey-6);
-}
-footer .container a{
-    text-decoration: none;
-}
-.f-foot li , h2:hover{
-    color: var(--yellow-1);
-}
-footer .container a:hover{
-    color: var(--yallow-1);
-}
-.sub {
-    text-align: left;
-    padding: 1rem;
-}
-.sub h2{
-    font-size: 1.3rem;
-}
-.sub h2 a{
-    color:#adb5bd;
-}
-.subul{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.subul li a{
-    color: var(--white);
-}
-.subul li{
-    padding: .7rem 0;
-}
-.sublogo .up{
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    padding: 1rem;
-    font-weight: bold;
-    color:#adb5bd ;
-}
-.botlogo .sublogo{
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: var(--grey-8);
-}
-.container .twice-logo{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: var(--cyan-1);
 }
 .subfooter{
     max-width: 69.3rem;
     margin: auto;
     border-top: 1px solid var(--cyan-1);
+    margin-top: 3rem;
 }
 .bottomfooter{
     display: flex;
@@ -153,34 +195,26 @@ footer .face , .youtube , .linkedin , .insta{
 .social .insta:hover{
     fill: var(--yellow-1);
 }
-.subfooter .policy{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
+.footer-title a:hover{
+    color: var(--yellow-1);
 }
-.subfooter .terms{
-    display: flex;
-    margin: .5rem .8rem;
-    font-size: .9rem;
-    border-right: 1px solid var(--cyan-1);
-    padding-right: 1rem;
+@media screen and (max-width: 768px) {
+    .footer-title .footer-comp-1 , .footer-title .footer-comp-2 {
+        display: none;
+    }
 }
-.policy .lastterm{
-    border: none !important;
-}
-.policy a{
-    text-decoration: none;
-}
-.policy a:hover{
-    color:yellow;
+
+@media screen and (min-width: 769px) and (max-width: 1450px){
+    .footer-title .footer-comp-1 , .footer-title .footer-comp-2 {
+        display: block;
+    }
 }
 .fixed-options{
     position: fixed;
     right: 0;
     bottom: 4rem;
     z-index: 10;
-    display: none;
-}
+} 
 .side-icons{
     position: fixed;
     right: -4rem;
@@ -206,13 +240,16 @@ footer .face , .youtube , .linkedin , .insta{
 .arrow button{
     border: none;
 }
+/* .arrow .arrow-up{
+    margin-right: 1rem;
+    margin-top: .9rem;
+    display: inline-block;
+    width: 30px;
+    fill: var(--white);
+} */
 .arrow:hover .arrow-up{
     transform: scaleY(1.2);
     transition: .3s;
-}
-.backup .headset{
-    width: 1.8rem;
-    margin: 1rem;
 }
 .backup{
     transition: .5s;
@@ -226,18 +263,54 @@ footer .face , .youtube , .linkedin , .insta{
     background-color: #95D03A;
     box-shadow:inset 0 0 20px -10px;
 }
-.share-icon .top-share{
-    margin: 1rem;
-    width: 1.5rem;
-    height: 1.5rem;
+.share-icon .share-svg{
+    margin-right: 1rem;
+    margin-top: .9rem;
+    display: inline-block;
+    width: 30px;
+    fill: var(--white);
 }
-.sub-share img{
-    width: 2rem;
-    height: 2rem;
+.backup .headset{
+    margin-right: 1rem;
+    margin-top: .9rem;
+    display: inline-block;
+    width: 30px;
+    fill: var(--white);
 }
-.share-icon:hover .side-icons{
-    right: 0;
-    transition: .4s;
+.facebook-sub{
+    margin-right: 1rem;
+    margin-top: .9rem;
+    display: inline-block;
+    width: 30px;
+    fill: var(--white);
+}
+.watsapp .watsapp-sub{
+    margin-right: 1rem;
+    margin-top: .9rem;
+    display: inline-block;
+    width: 30px;
+    fill: var(--white);
+}
+.vibe .messenger{
+    margin-right: 1rem;
+    margin-top: .9rem;
+    display: inline-block;
+    width: 30px;
+    fill: var(--white);
+}
+.line .line-sub{
+    margin-right: 1rem;
+    margin-top: .9rem;
+    display: inline-block;
+    width: 30px;
+    fill: var(--white);
+}
+.message .message-sub{
+    margin-right: 1rem;
+    margin-top: .9rem;
+    display: inline-block;
+    width: 30px;
+    fill: var(--white);
 }
 .backup{
     background-color: #95D03A;
@@ -266,85 +339,48 @@ footer .face , .youtube , .linkedin , .insta{
 .sub-share{
     background-color: #95D03A;
 }
-.arrow svg{
-    width: 2rem;
-    height: 2rem;
-}
-.sub-share img{
-    margin: 1rem;
-    width: 1.5rem;
-    height: 1.5rem;
+.share-icon:hover .side-icons{
+    right: 0;
     transition: .5s;
 }
-.sub-share:hover .share{
+.sub-share , .share-svg{
+    transition: .5s;
+}
+.sub-share:hover .share-svg{
     transform: translateX(10px);
+}
+.message , .message-sub{
     transition: .5s;
 }
-.sub-message{
-    width: 2rem;
-    height: 2rem;
-    margin: 1rem;
-    transition: .5s;
-}
-.message:hover .sub-message{
+.message:hover .message-sub{
     transform: translateX(10px);
+}
+.line , .line-sub{
     transition: .5s;
 }
-.line .sub-line{
-    width: 7rem;
-    height: 4rem;
-    margin-right: -1.5rem;
-    transition: .5s;
-}
-.line:hover .sub-line{
+.line:hover .line-sub{
     transform: translateX(10px);
-    transition: .5s;
 }
-.vibe .messenger{
-    width: 2rem;
-    height: 2rem;
-    margin: 1rem;
+.vibe , .messenger{
     transition: .5s;
 }
 .vibe:hover .messenger{
     transform: translateX(10px);
+}
+.watsapp , .watsapp-sub{
     transition: .5s;
 }
-.watsapp .sub-whats{
-    width: 2rem;
-    height: 2rem;
-    margin: 1rem;
-    transition: .5s;
-}
-.watsapp:hover .sub-whats{
+.watsapp:hover .watsapp-sub{
     transform: translateX(10px);
+}
+.facebook , .facebook-sub{
     transition: .5s;
 }
-.wechat .sub-wechat{
-    width: 2rem;
-    height: 2rem;
-    margin: 1rem;
-    border-radius: 20px;
-    transition: .5s;
-}
-.wechat:hover .sub-wechat{
+.facebook:hover .facebook-sub{
     transform: translateX(10px);
-    transition: .5s;
 }
-.facebook .sub-face{
-    width: 2rem;
-    height: 2rem;
-    margin: 1rem;
-    transition: .5s;
-    background-color: var(--white);
-    border-radius: 30px;
-}
-.facebook:hover .sub-face{
-    transform: translateX(10px);
-    transition: .5s;
-}
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 575px) {
     .fixed-options {
-        display: block;
+        display: none;
     }
 }
