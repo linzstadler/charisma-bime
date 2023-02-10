@@ -129,6 +129,20 @@ main .main-img , main .align-h1{
     margin: 1rem;
     box-shadow: 0 0 15px -5px black;
 }
+@media screen and (min-width:1400px) {
+  .rules-box .part-box{
+    padding-right: 6rem;
+  }
+}
+@media screen and (max-width:1199px) {
+  .rules-box .col{
+    max-width: 330px;
+    height: 280px;
+  }
+  .rules-box .part-box{
+    justify-content: space-around;
+  }
+}
 .fl{
     background-image: url(../image/icon-service-glossary-list.png);
     background-repeat:no-repeat;
