@@ -141,11 +141,13 @@ header .tophead {
     margin-bottom: 9rem;
 
 }
+
 .carousel-inner {
     max-height: 500px;
 }
+
 /* ----------------------------بخش جعبه محصولات----------------- */
-.pro-box > div{
+.pro-box > div {
     width: 100%;
     margin: -140px auto 0;
     background-color: var(--white);
@@ -379,7 +381,7 @@ footer .face, .youtube, .linkedin, .insta {
     transition: .4s;
 }
 
-.share-icon, .backup, .arrow, .facebook, .wechat, .watsapp, .vibe, .line, .message, .sub-share {
+.share-icon, .backup, .arrow, .facebook, .watsapp, .vibe, .line, .message, .sub-share {
     width: 4rem;
     height: 4rem;
     margin: 0;
@@ -490,10 +492,6 @@ footer .face, .youtube, .linkedin, .insta {
     background-color: #4267b2;
 }
 
-.wechat {
-    background-color: #4EC034;
-}
-
 .watsapp {
     background-color: #25d366;
 }
@@ -571,6 +569,7 @@ footer .face, .youtube, .linkedin, .insta {
     .otherNews {
         padding: 25rem 0 5rem;
     }
+
     .carousel-inner {
         max-height: 400px;
     }
@@ -595,6 +594,7 @@ footer .face, .youtube, .linkedin, .insta {
         padding: 0;
         max-width: 100% !important;
     }
+
     .pro-box > div {
         position: relative !important;
         margin: auto;
@@ -604,9 +604,11 @@ footer .face, .youtube, .linkedin, .insta {
     .otherNews {
         padding: 5rem 0 5rem;
     }
+
     .carousel-indicators {
         margin-bottom: 0;
     }
+
     .carousel-inner {
         max-height: 300px;
     }
