@@ -15,4 +15,17 @@ $(function() {
     $(".arrow.arrow-handler").click(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+
+    $("header .navCollapse .list-group-item .handler").click(function () {
+        if($(this).hasClass('collapsed')) {
+            $(this).parent().find(".plus-span").css("display", "inline-block")
+            $(this).parent().find(".minus-span").css("display", "none")
+
+        } else {
+            $(this).parent().find(".plus-span").css("display", "none")
+            $(this).parent().find(".minus-span").css("display", "inline-block")
+        }
+    })
+
+    console.log($("header .navCollapse .collapseLayer2"))
 });
