@@ -30,6 +30,7 @@ body {
     font-family: 'CharismaTF', sans-serif;
     font-weight: 400;
     font-size: 1rem !important;
+    color: var(--blue-1);
 }
 span, p, a, button {
     font-size: 1rem !important;
@@ -57,4 +58,30 @@ h5 {
     font-size: 1rem;
 }
 
-
+.breadcrumb {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    border-radius: 0 0 0.25rem 0.25rem;
+    padding: .8rem 1rem;
+}
+.breadcrumb ul li span {
+    color: var(--grey-7);
+}
+.breadcrumb ul {
+    margin: 0;
+    padding: 0;
+}
+.breadcrumb ul li {
+    display: inline-block;
+}
+.breadcrumb ul li:not(:last-of-type):after {
+    content: "/";
+    margin: 0 5px;
+    color: var(--grey-7);
+}
+.breadcrumb a{
+    color: var(--white);
+}
+.breadcrumb a:hover {
+    color: var(--grey-7);
+}

@@ -1,5 +1,5 @@
 
-.main .border .plus-box {
+main .border .plus-box {
     background-image: linear-gradient(41deg, #0C3148 0%, #D20B10 100%);
     background-repeat: no-repeat;
     background-size: contain;
@@ -7,49 +7,41 @@
     height: 150px;
     margin: auto;
     display: block;
-
-
 }
-.main .header h1 {
-    margin: 0;
+main .header h1 {
+    margin: .5rem 0 0;
     text-align: center;
-    font-weight: 600;
-    font-size: 3rem;
+    font-weight: bold;
 }
-.main .border {
+main .border {
     background: var(--white);
-
 }
 
-.main .boxText > div:first-of-type {
+main .boxText > div:first-of-type {
     flex: 0 0 1rem;
 }
-.main .boxText > div:last-of-type {
+main .boxText > div:last-of-type {
     padding-right: 0.625rem;
 }
-.main .boxText > div:last-of-type p {
+main .boxText > div:last-of-type p {
     margin: 0;
     font-size: 1.1rem;
 }
 
-.main .boxText .icon {
-
-    fill: #f39800;
+main .boxText .icon {
+    fill: var(--orange-2);
 }
 
-.main .rounded-circle {
+main .rounded-circle {
     border-radius: 50% !important;
 }
 
 
-.main h1, .main h2 {
-    font-family: 'CharismaTF', sans-serif;
+main h1, main h3 {
     color: var(--grey-3);
 }
-.main h2 {
-    margin-bottom: 15px;
-}
-.main .content1 {
+
+main .content1 {
     color: var(--black);
     line-height: 1.2;
     margin-bottom: 0.5rem;
@@ -61,7 +53,7 @@
 }
 
 
-.main .myImage {
+main .myImage {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -69,16 +61,16 @@
     z-index: 10;
 }
 
-.main .myImage img {
+main .myImage img {
     width: 100%;
 }
 
-.main .myImage:hover img {
+main .myImage:hover img {
     transform: scale(1, 1);
 
 }
 
-.main .content {
+main .content {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -95,11 +87,11 @@
 
 }
 
-.main .myImage:hover .content {
+main .myImage:hover .content {
     opacity: 1;
 }
 
-.main .content a {
+main .content a {
     background-color: var(--red-1);
     color: var(--white);
     padding: 10px 15px;
@@ -108,15 +100,20 @@
     display: inline-block;
 }
 
-.main .body {
+main .body {
     background-color: var(--grey-1);
 }
 
-.main .body .box {
+main .body .box {
     background-color: var(--white);
     padding: 20px 20px 132px;
     position: relative;
     min-height: 450px;
     height: 100%;
 
+}
+
+main .body .box h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
 }

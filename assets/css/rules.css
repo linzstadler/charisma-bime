@@ -1,0 +1,22 @@
+main .imgWrapper {
+    padding-top: 2rem;
+}
+main .imgWrapper img {
+    max-width: 10rem;
+}
+main .rules-box {
+    background-image: url(../img/bg-green.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem 0;
+    margin: 3rem 0 0;
+}
+
+main .rules-box .box {
+    display: block;
+    background-color: var(--white);
+    height: 100%;
+    box-shadow: 0 0 15px -5px black;
+    padding: 3rem 0;
+
+}

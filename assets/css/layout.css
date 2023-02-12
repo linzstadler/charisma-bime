@@ -203,6 +203,7 @@ footer .face, .youtube, .linkedin, .insta {
 
 .footer-comp-3 .phoneNumber {
     color: var(--orange-1);
+    font-size: 1.2rem;
 }
 
 .footer-comp-3 .enemadWrapper {
@@ -235,6 +236,7 @@ footer .face, .youtube, .linkedin, .insta {
     right: 0;
     bottom: 0;
     z-index: 10;
+
 }
 
 .arrow .arrow-up {
@@ -245,6 +247,7 @@ footer .face, .youtube, .linkedin, .insta {
 
 .arrow button {
     border: none;
+    padding: 0;
 }
 
 .arrow:hover .arrow-up {

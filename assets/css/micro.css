@@ -1,0 +1,35 @@
+
+/* -------------------------------------main----------- */
+main .main-label a:hover{
+    color: var(--white);
+}
+main .micro{
+    background-image: url(../img/new-center-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .f-h1{
+    font-size: 55px;
+    font-weight:900;
+    word-spacing: 5px;
+}
+.hash a{
+    color: var(--grey-2);
+}
+.hash a:hover{
+    color: var(--black);
+}
+main .file{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+@media screen and (max-width:992px) {
+    main .file{
+        max-width: 90%;
+    }
+}

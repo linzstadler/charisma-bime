@@ -1,0 +1,32 @@
+/* --------------------------------------------main--------- */
+main .collapsePlus {
+    display: none;
+}
+.mainImg img {
+    max-width: 10rem;
+}
+
+main .reportCollapse .btnCollapse {
+    background-color: var(--grey-1);
+}
+
+main .reportCollapse .icons {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    width: 1rem;
+    display: inline-block;
+    line-height: 0;
+}
+main .enter-link {
+    border: 1px solid var(--grey-5);
+}
+main .reportCollapse .collapse a.link-secondary {
+    fill: #6c757d;
+}
+@media screen and (max-width: 991px) {
+    main .enter-link {
+        border: none;
+    }
+}
+
