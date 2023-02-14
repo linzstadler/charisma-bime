@@ -1,0 +1,311 @@
+.intro {
+    background-image: url("../img/bg01.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 25rem;
+}
+
+.intro:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.intro > div {
+    z-index: 2;
+    color: var(--white);
+    fill: var(--white);
+}
+
+.intro .icon {
+    display: inline-block;
+    width: 2rem;
+}
+
+.navWrapper {
+    margin-top: -3.5rem;
+    z-index: 9;
+}
+
+.navWrapper ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navWrapper ul li {
+    display: inline-block;
+}
+
+.navWrapper ul li button {
+    color: var(--white);
+    padding: 1rem;
+    display: inline-block;
+    background-color: transparent;
+    border: 0;
+}
+
+.navWrapper.sticky {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--white);
+    color: var(--blue-1);
+    margin-top: 0;
+    border-bottom: 1px solid var(--grey-1);
+}
+
+.navWrapper.sticky ul li button {
+    color: var(--blue-1);
+}
+.navWrapper.sticky button.active {
+    background-color: var(--grey-1);
+}
+.about {
+    background-image: url("../img/bg-orange.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 15rem;
+    padding: 4rem 0;
+}
+
+.about h2 {
+    position: relative;
+    display: inline-block;
+}
+
+.about h2:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--orange-1);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.view {
+    background-image: url("../img/map-bg.png");
+    background-size: cover;
+    background-position: center center;
+    min-height: 25rem;
+}
+
+.view .line {
+    height: 30px;
+    background-image: url("../img/timeline-lg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    width: 100%;
+    max-width: 75rem;
+    margin: auto;
+}
+
+.view .boxTop,
+.view .boxBottom {
+    position: relative;
+}
+
+.view .boxTop:after {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: #999;
+    bottom: -20px;
+}
+
+.view .boxBottom:after {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: var(--grey-15);
+    top: -20px;
+}
+
+.view .activeBox:after {
+    height: 15px;
+    width: 15px;
+    top: -22.7px;
+    background-color: var(--orange-1);
+}
+
+.view .body .row:first-of-type {
+    margin-left: 13%;
+}
+
+.view .body .row:last-of-type {
+    margin-right: 13%;
+}
+.hierarchy {
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
+    color: var(--white);
+    padding: 5rem 0;
+}
+.hierarchy .title {
+    font-size: 1.5rem !important;
+    font-weight: 600;
+    text-align: center;
+}
+.hierarchy section {
+    max-width: 60rem;
+    margin: auto;
+}
+.hierarchy a {
+    display: flex;
+    background-color: var(--white);
+    border-radius: 5px;
+    flex-wrap: nowrap;
+    padding: 30px;
+    height: 100%;
+    color: var(--blue-1);
+}
+.hierarchy a > div:first-of-type {
+    width: 220px;
+}
+.hierarchy a > div:last-of-type {
+    padding-right: 20px;
+    width: 100%;
+}
+.hierarchy a > div {
+    text-align: left;
+}
+.hierarchy a > div:last-of-type p:first-of-type {
+    font-size: 2rem !important;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+.hierarchy a > div:last-of-type p:first-of-type:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--green-3);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.hierarchy a > div:last-of-type p:last-of-type {
+    text-align: left;
+    margin: 0;
+}
+.hierarchy a img {
+    border-radius: 999px;
+}
+.corporateCulture {
+    background-color: var(--grey-3);
+    color: var(--white);
+    fill: var(--white);
+    padding: 5rem 0;
+    text-align: center;
+}
+.corporateCulture .borders {
+    border-right: 1px solid var(--grey-14);
+    border-left: 1px solid var(--grey-14);
+}
+.corporateCulture .iconWrapper {
+    border: 2px solid var(--white);
+    border-radius: 999px;
+    width: 7rem;
+    margin: 0 auto 1rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.corporateCulture .iconWrapper span {
+    width: 30px;
+    display: inline-block;
+}
+.shareholders {
+    position: relative;
+}
+.shareholders section {
+    max-width: 55rem;
+    margin: auto;
+    padding: 4rem 0 3rem;
+
+}
+.shareholders section > div {
+    border: 25px solid rgba(0,0,0,0.6);
+    margin: 0 1rem;
+}
+.shareholders section h2 {
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+.shareholders:before {
+    background-image: url(../img/cli-building.jpg);
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    content: "";
+    left: 0;
+    top: -20%;
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    display: block;
+    background-position: center;
+    z-index: -1;
+    background-size: cover;
+}
+@media screen and (max-width: 767px) {
+    .view .line {
+        width: 3px;
+        margin: 0 20px;
+        height: auto;
+        background: -moz-linear-gradient(top, rgba(204,204,204,0) 0%, rgba(204,204,204,1) 26%, rgba(204,204,204,1) 71%, rgba(204,204,204,0) 100%);
+        background: -webkit-linear-gradient(top, rgba(204,204,204,0) 0%,rgba(204,204,204,1) 26%,rgba(204,204,204,1) 71%,rgba(204,204,204,0) 100%);
+        background: linear-gradient(to bottom, rgba(204,204,204,0) 0%,rgba(204,204,204,1) 26%,rgba(204,204,204,1) 71%,rgba(204,204,204,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cccccc', endColorstr='#00cccccc',GradientType=0 );
+        max-width: 100%;
+    }
+    .view .boxBottom:after {
+        top: 30px;
+        right: -26.4px;
+    }
+    .view .boxTop:after {
+        bottom: 0;
+        top: 30px;
+        left: -27px;
+    }
+    .view .activeBox:after {
+        right: -29px;
+    }
+    .view .body {
+        display: flex;
+    }
+    .view .body > .row {
+        flex: 4;
+    }
+    .view .body > .row > div {
+        min-height: 100px;
+    }
+    .view .body .row:first-of-type {
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+    .view .body .row:first-of-type p {
+        text-align: left;
+    }
+
+    .view .body .row:last-of-type {
+        margin-right: 0;
+        margin-top: 50px;
+    }
+    .view .body .row:last-of-type p {
+        text-align: right;
+    }
+    .corporateCulture .borders {
+        border: 0;
+    }
+}

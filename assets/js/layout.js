@@ -27,5 +27,4 @@ $(function() {
         }
     })
 
-    console.log($("header .navCollapse .collapseLayer2"))
 });
