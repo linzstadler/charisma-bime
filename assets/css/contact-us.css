@@ -1,0 +1,98 @@
+.intro {
+    padding-top: 6rem;
+}
+.intro .columns p {
+    margin: 0;
+}
+.intro .columns h3 {
+    margin: .7rem 0 0;
+}
+.intro .columns img {
+    max-width: 120px;
+}
+.intro a {
+    margin-top: 1rem;
+}
+.intro .icon {
+    display: inline-block;
+    width: .5rem;
+    margin-right: .1rem;
+}
+.serviceHotline {
+    background-image: url("./../img/contact-us-service-hotline-bg.jpg");
+    background-size: cover;
+    padding: 100px 0;
+    text-align: right;
+    margin: 3rem 0;
+}
+.serviceHotline p {
+    margin: 0;
+    font-size: 2.5rem !important;
+    color: var(--white);
+
+}
+.information .icon {
+    display: inline-block;
+    width: 1rem;
+    vertical-align: top;
+    line-height: 1.2;
+}
+.information .grayBox {
+    background-color: var(--grey-1);
+    padding: 3rem;
+}
+.serviceCentre {
+    background-image: url("./../img/contact-us-service-centre-bg.jpg");
+    background-size: cover;
+    padding: 100px 0;
+    text-align: right;
+    margin: 3rem 0;
+}
+.serviceCentre p {
+    margin: 0;
+    font-size: 2.5rem !important;
+    color: var(--white);
+}
+.customerComplaints {
+    background-image: url("./../img/compin_1028.jpg");
+    background-size: cover;
+    padding: 100px 0;
+    text-align: right;
+    margin: 0 0 3rem;
+}
+.customerComplaints p {
+    margin: 0;
+    font-size: 2.5rem !important;
+    color: var(--white);
+}
+.mapAddress {
+    max-width: 90%;
+    margin: auto;
+}
+.mapAddress .d-flex > div:first-of-type {
+    flex: 0 0 30px;
+}
+.mapAddress .d-flex > div:last-of-type {
+    padding-right: 1rem;
+}
+.mapAddress .title {
+    line-height: 1;
+    font-size: 1.7rem !important;
+}
+@media screen and (max-width: 991px) {
+    .information .text {
+        margin-right: 1.5rem;
+    }
+    .serviceHotline, .serviceCentre, .customerComplaints {
+        background-image: url("./../img/bg-green.jpg");
+        padding: 3rem 0;
+    }
+    .serviceHotline p, .serviceCentre p, .customerComplaints p {
+        font-size: 2rem !important;
+    }
+    .clio-hr-bottom-line {
+        padding-bottom: 4vh;
+        border-bottom: 1px solid var(--grey-1);
+        margin-bottom: 1vh;
+    }
+}

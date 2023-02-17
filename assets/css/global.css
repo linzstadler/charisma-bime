@@ -31,10 +31,13 @@ body {
     font-weight: 400;
     font-size: 1rem !important;
     color: var(--blue-1);
+    overflow-x: hidden;
 }
+
 span, p, a, button {
     font-size: 1rem !important;
 }
+
 a {
     text-decoration: none;
 }
@@ -42,18 +45,23 @@ a {
 ul {
     list-style-type: none;
 }
+
 h1 {
     font-size: 2.5rem;
 }
+
 h2 {
     font-size: 2rem;
 }
+
 h3 {
     font-size: 1.625rem;
 }
+
 h4 {
     font-size: 1.25rem;
 }
+
 h5 {
     font-size: 1rem;
 }
@@ -65,24 +73,55 @@ h5 {
     padding: .8rem 1rem;
     z-index: 9;
 }
+
 .breadcrumb ul li span {
     color: var(--grey-7);
 }
+
 .breadcrumb ul {
     margin: 0;
     padding: 0;
 }
+
 .breadcrumb ul li {
     display: inline-block;
 }
+
 .breadcrumb ul li:not(:last-of-type):after {
     content: "/";
     margin: 0 5px;
     color: var(--grey-7);
 }
-.breadcrumb a{
+
+.breadcrumb a {
     color: var(--white);
 }
+
 .breadcrumb a:hover {
     color: var(--grey-7);
+}
+
+.btn-outline-secondary {
+    color: var(--grey-7);
+    fill: var(--grey-7);
+    border: 1px solid var(--grey-7);
+    padding: .3rem 1rem .4rem;
+    display: inline-block;
+    border-radius: 999px;
+}
+
+.btn-outline-secondary:hover {
+    fill: var(--white);
+}
+
+.text-warning {
+    color: var(--orange-1) !important;
+    fill: var(--orange-1);
+}
+.text-muted {
+    color: var(--blue-2) !important;
+    fill: var(--blue-2);
+}
+.fs-\.875 {
+    font-size: 0.875rem !important;
 }

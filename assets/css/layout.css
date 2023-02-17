@@ -143,10 +143,7 @@ footer {
 }
 
 .subFooter {
-    /*max-width: 69.3rem;*/
-    /*margin: auto;*/
     border-top: 1px solid var(--grey-5);
-    /*margin-top: 3rem;*/
 }
 
 .bottomFooter {
