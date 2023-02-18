@@ -33,31 +33,173 @@
 .intro .features .d-flex > div:first-of-type {
     width: 100px;
 }
-.features h1 {
-    /*color: red*/
+.features .icon {
+    display: inline-block;
+    width: 25px;
+    vertical-align: top;
+    margin: 5px 0 0 8px;
+
 }
-.swiper {
+.features h3 {
+    margin: 2rem 0 .5rem;
+}
+.list-style-type-disc {
+    list-style-type: disc;
+}
+.list-style-type-decimal {
+    list-style-type: decimal;
+}
+.detail {
     width: 100%;
     height: 100%;
+    background-image: url("../img/products-details-bg.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: cover;
+    background-position: 50%;
+    padding: 3rem 0;
+    margin-top: 3rem;
+}
+.detail h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--grey-16);
+    text-shadow: 1px 1px 5px var(--grey-17);
+}
+.detail .header {
+    margin: 33px 60px 0px 60px;
+    margin-bottom: 0px;
+    padding: 30px 4px 30px 4px;
+    margin-bottom: 0 !important;
+    background: linear-gradient(41deg, var(--blue-3) 0%, var(--green-6) 100%);
+    color: var(--white);
+    text-align: center;
+}
+.detail .header p {
+    font-size: 1.2rem !important;
+    margin-bottom: 0;
+}
+.detail .body {
+    background-color: var(--white);
+    padding: 0 75px 20px 75px;
+    box-shadow: 1px 1px 5px var(--grey-17);
+}
+.contactWrapper {
+    padding: 5rem;
+    background-image: url("../img/product-contactus-bg.jpg");
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.contactWrapper:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+.contactWrapper .container {
+    position: relative;
+    z-index: 3;
 }
 
-.swiper-slide {
+
+
+
+main .reportCollapse .btnCollapse {
+    background-color: var(--grey-1);
+}
+
+.reportCollapse .icons {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    width: 1rem;
+    display: inline-block;
+    line-height: 0;
+}
+main .reportCollapse .icons.collapseMinus {
+    display: none;
+}
+main .reportCollapse .custom-list-style {
+    margin-right: 2rem;
+}
+main .reportCollapse .custom-list-style > div:last-of-type {
+    padding-right: 1rem;
+}
+main .reportCollapse .custom-list-style span {
+    background-color: var(--green-3);
+    display: inline-block;
+    color: var(--white);
+    padding: 0 .5rem;
+    border-radius: 999px;
+}
+.inner-disclaim.table th {
+    background: var(--green-3);
+    color: var(--white);
+}
+.supportArea img {
+    max-width: 100px;
+}
+.supportArea a {
+    display: inline-block;
+    color: var(--grey-17);
+}
+.sliderArea {
+    background-color: var(--grey-1);
+    margin-top: 4rem;
+    padding: 4rem 0;
+}
+.sliderArea .swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2.2rem;
+}
+
+.sliderArea .swiper-slide {
     text-align: center;
-    font-size: 18px;
-    background: #fff;
+    background-color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: .5rem;
+    overflow: hidden;
 }
-
-.swiper-slide img {
+.sliderArea .swiper-slide .successColor {
+    color: var(--green-3);
+}
+.sliderArea .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.swiper {
-    margin-left: auto;
-    margin-right: auto;
+.sliderArea .swiper-slide a {
+    display: block;
+    padding: 10px;
+    border-top: 1px solid var(--grey-4);
+    color: var(--grey-7);
+}
+.sliderArea .icon {
+    display: inline-block;
+    width: 100px;
+}
+.sliderArea .swiper-button-prev::after, .sliderArea .swiper-button-next::after {
+    display: none;
+}
+.sliderArea .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--orange-1);
+}
+
+.sliderArea .swiper-button-next, .swiper-button-prev {
+    color: var(--orange-1);
 }

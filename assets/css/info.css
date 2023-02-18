@@ -1,7 +1,5 @@
 /* --------------------------------------------main--------- */
-main .collapsePlus {
-    display: none;
-}
+
 .mainImg img {
     max-width: 10rem;
 }
@@ -17,6 +15,9 @@ main .reportCollapse .icons {
     width: 1rem;
     display: inline-block;
     line-height: 0;
+}
+main .reportCollapse .icons.collapsePlus {
+    display: none;
 }
 main .enter-link {
     border: 1px solid var(--grey-5);
