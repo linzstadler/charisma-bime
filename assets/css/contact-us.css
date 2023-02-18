@@ -31,12 +31,13 @@
     color: var(--white);
 
 }
-.information .icon {
+.information .icon, .numberAddressArea .icon {
     display: inline-block;
     width: 1rem;
     vertical-align: top;
     line-height: 1.2;
 }
+
 .information .grayBox {
     background-color: var(--grey-1);
     padding: 3rem;
@@ -79,6 +80,29 @@
     line-height: 1;
     font-size: 1.7rem !important;
 }
+.supportArea {
+    background-color: var(--grey-1);
+    padding: 4rem 0;
+}
+.supportArea h2 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.supportArea a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 7px 0px rgba(50, 50, 50, 0.4);
+    background-color: var(--white);
+    color: var(--black);
+    padding: 6rem 0;
+}
+.supportArea a p {
+    font-size: 1.5rem !important;
+}
+.supportArea a img {
+    width: 120px;
+}
 @media screen and (max-width: 991px) {
     .information .text {
         margin-right: 1.5rem;
@@ -94,5 +118,15 @@
         padding-bottom: 4vh;
         border-bottom: 1px solid var(--grey-1);
         margin-bottom: 1vh;
+    }
+    .supportArea a {
+        display: flex;
+        align-items: center;
+        padding: .5rem 2em;
+        box-shadow: 0 0 0;
+    }
+    .supportArea a img {
+        width: 60px;
+        margin-left: 1rem;
     }
 }
